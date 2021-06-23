@@ -1,0 +1,21 @@
+uuid: bf99305a-34eb-498c-804a-f1160fd45e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_signing
+    - node.type.book
+  module:
+    - datetime
+id: node.book.field_book_signing
+field_name: field_book_signing
+entity_type: node
+bundle: book
+label: 'Дата подписания в тираж'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

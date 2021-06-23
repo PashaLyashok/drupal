@@ -1,0 +1,21 @@
+uuid: 50363227-e892-42e3-9122-31dca844fe4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_edition
+    - node.type.book
+id: node.book.field_book_edition
+field_name: field_book_edition
+entity_type: node
+bundle: book
+label: Тираж
+description: 'Please, choose a date of edition'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1624377981
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

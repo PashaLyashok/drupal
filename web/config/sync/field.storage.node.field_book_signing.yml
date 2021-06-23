@@ -1,0 +1,20 @@
+uuid: fb03c940-a9d3-483b-ba1c-90c287a0448e
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_book_signing
+field_name: field_book_signing
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
