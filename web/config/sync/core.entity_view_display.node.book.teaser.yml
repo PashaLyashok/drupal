@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.book.field_book_author
     - field.field.node.book.field_book_edition
+    - field.field.node.book.field_book_genre
     - field.field.node.book.field_book_img
     - field.field.node.book.field_book_isbn
     - field.field.node.book.field_book_signing
@@ -26,6 +27,7 @@ content:
 hidden:
   field_book_author: true
   field_book_edition: true
+  field_book_genre: true
   field_book_img: true
   field_book_isbn: true
   field_book_signing: true
