@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^9.2",
         "drupal/devel": "4.1",
         "drupal/module_filter": "3.2",
+        "drupal/views_field_view": "^1.0@beta",
         "drush/drush": "^10.5"
     },
     "conflict": {
