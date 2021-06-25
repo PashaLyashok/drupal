@@ -19,8 +19,12 @@
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/ctools": "^3.7",
         "drupal/devel": "4.1",
+        "drupal/features": "^3.12",
         "drupal/module_filter": "3.2",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/panels": "^4.6",
         "drupal/views_field_view": "^1.0@beta",
         "drush/drush": "^10.5"
     },
