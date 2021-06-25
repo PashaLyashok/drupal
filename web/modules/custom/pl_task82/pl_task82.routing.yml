@@ -1,0 +1,7 @@
+test.loc.task82:
+  path: 'task82'
+  defaults: 
+   _controller: '\Drupal\pl_task82\Controller\Task82::content'
+   _title: 'Hello Page'
+  requirements:
+   _permission: 'access content'
