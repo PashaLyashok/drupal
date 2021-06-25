@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.book.field_book_isbn
     - field.field.node.book.field_book_signing
     - field.field.node.book.field_book_writing
+    - image.style.custom
     - node.type.book
   module:
     - datetime
@@ -51,7 +52,7 @@ content:
     weight: 106
     label: above
     settings:
-      image_style: ''
+      image_style: custom
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -83,7 +84,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
