@@ -1,7 +1,0 @@
-test.loc.hello_page:
-  path: 'hello-page'
-  defaults: 
-   _controller: '\Drupal\hello\Controller\HelloPage::content'
-   _title: 'Hello Page'
-  requirements:
-    _permission: 'access content'

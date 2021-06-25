@@ -1,5 +1,5 @@
-name: Hello
+name: pl_task82
 description: My first custom module
 core_version_requirement: ^8 || ^9
 type: module
-package: HelloModule
+package: PL
