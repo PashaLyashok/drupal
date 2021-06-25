@@ -1,0 +1,14 @@
+uuid: d71c2e13-c5d4-46f8-8e85-fda477a13f50
+langcode: en
+status: true
+dependencies: {  }
+name: custom
+label: Custom
+effects:
+  4dc7792f-b4be-40e5-b653-4ec0afb53f0b:
+    uuid: 4dc7792f-b4be-40e5-b653-4ec0afb53f0b
+    id: image_resize
+    weight: 1
+    data:
+      width: 134
+      height: 134
