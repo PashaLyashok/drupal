@@ -1,0 +1,5 @@
+name: pl_topic4task27
+description: Page with 5 nodes
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
