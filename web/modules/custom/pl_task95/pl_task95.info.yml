@@ -1,0 +1,5 @@
+name: pl_task95
+description: My first custom block
+core_version_requirement: ^8 || ^9
+type: module
+package: PL

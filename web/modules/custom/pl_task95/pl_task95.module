@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function pl_task95_theme($existing, $type, $theme, $path) {
+  return [
+    'hello_block' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
+}
