@@ -11,7 +11,7 @@ class Task27 extends ControllerBase{
   public function content() {
 
     $nodes = \Drupal::database()->select('node_field_data', 'n')
-      ->fields('n')
+      ->fields('n', ['title', 'created'])
       ->range(0, 5)
       ->execute();
     
