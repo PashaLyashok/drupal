@@ -12,6 +12,7 @@ class Task27 extends ControllerBase{
 
     $nodes = \Drupal::database()->select('node_field_data', 'n')
       ->fields('n', ['title', 'created'])
+      ->condition('status', 1)
       ->range(0, 5)
       ->execute();
     
