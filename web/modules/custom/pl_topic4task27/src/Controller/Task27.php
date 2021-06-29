@@ -12,7 +12,7 @@ class Task27 extends ControllerBase{
 
     $nodes = \Drupal::database()->select('node_field_data', 'n')
       ->fields('n')
-      ->range(0, 5) // <--
+      ->range(0, 5)
       ->execute();
 
     foreach ($nodes as $node) {
@@ -21,7 +21,6 @@ class Task27 extends ControllerBase{
     
     return [
       '#theme' => 'my_nodes_page',
-      //'#nodes' => $this->t('Test Value'),
       '#nodes' => $items,
     ];
   }
