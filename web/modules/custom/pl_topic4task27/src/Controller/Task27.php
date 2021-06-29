@@ -14,14 +14,10 @@ class Task27 extends ControllerBase{
       ->fields('n')
       ->range(0, 5)
       ->execute();
-
-    foreach ($nodes as $node) {
-      $items[] = ['title' => $node->title, 'created' => $node->created];
-    }
     
     return [
       '#theme' => 'my_nodes_page',
-      '#nodes' => $items,
+      '#nodes' => $nodes,
     ];
   }
 }
