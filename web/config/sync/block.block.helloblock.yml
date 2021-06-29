@@ -1,0 +1,20 @@
+uuid: aa015c3e-b334-48fa-a794-97ce7611ffab
+langcode: en
+status: true
+dependencies:
+  module:
+    - pl_task95
+  theme:
+    - bartik
+id: helloblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello block'
+  provider: pl_task95
+  label_display: visible
+visibility: {  }

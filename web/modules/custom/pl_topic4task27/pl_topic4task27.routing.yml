@@ -1,0 +1,7 @@
+test.loc.topic4task27:
+  path: 'topic4task27'
+  defaults: 
+   _controller: '\Drupal\pl_topic4task27\Controller\Task27::content'
+   _title: 'Topic4, Task27'
+  requirements:
+   _permission: 'access content'
