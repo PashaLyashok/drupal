@@ -12,32 +12,17 @@ use Drupal\Core\Access\AccessResult;
 class Task30 extends ControllerBase{
 
   /**
-   * Cheking role of current user.
-   */
-  static function checkRole() {
-    $current_user = \Drupal::currentUser();
-    $roles = $current_user->getRoles();
-    
-    return in_array('manager', $roles);
-  }
-
-  /**
-   * Cheking time for our conditions.
-   */
-  static function checkTime() {
-    $request_time = \Drupal::time()
-      ->getCurrentTime();
-    
-    return ($request_time % 2);
-  }
-
-  /**
    * Checks access for a specific request.
    */
   public function access(AccountInterface $account) {
-    self::checkTime();
-    self::checkRole();
-    return AccessResult::allowedIf(self::checkRole() != false && self::checkTime() == true);
+    $current_user = \Drupal::currentUser();
+    $roles = $current_user->getRoles();
+    $request_time = \Drupal::time()
+      ->getCurrentTime();
+    $manager_role = in_array('manager', $roles);
+    $even_time = $request_time % 2;
+
+    return AccessResult::allowedIf($manager_role != false && $even_time == true);
   }
 
   /**
