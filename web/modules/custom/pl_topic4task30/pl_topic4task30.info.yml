@@ -1,0 +1,5 @@
+name: pl_topic4task30
+description: Page only for Manager
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
