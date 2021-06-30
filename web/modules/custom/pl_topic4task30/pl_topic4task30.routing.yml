@@ -4,4 +4,4 @@ test.loc.check_credentials:
    _controller: '\Drupal\pl_topic4task30\Controller\Task30::content'
    _title: 'Only Manager can see this page!'
   requirements:
-   _permission: 'access content'
+   _custom_access: '\Drupal\pl_topic4task30\Controller\Task30::access'
