@@ -22,10 +22,12 @@ class Task30 extends ControllerBase{
       ->getCurrentTime();
     $even_time = $request_time % 2;
     $has_manager_role = $user->hasRole('manager');
-    $has_uuid = $user->uuid();
+    $is_authenticated = $user->isAuthenticated();
     $cond_1 = $has_manager_role !== FALSE && $even_time === TRUE;
-    $cond_2 = !empty($has_uuid) && $even_time !== TRUE;
+    $cond_2 = $is_authenticated !== FALSE && $even_time !== TRUE;
+  
     return AccessResult::allowedIf($cond_1 !== FALSE || $cond_2 !== FALSE);
+    
   }
 
   /**
