@@ -21,13 +21,10 @@ class Task30 extends ControllerBase{
     $request_time = \Drupal::time()
       ->getCurrentTime();
     $even_time = $request_time % 2;
-    $has_manager_role = $user->hasRole('manager');
-    $is_authenticated = $user->isAuthenticated();
-    $cond_1 = $has_manager_role !== FALSE && $even_time === TRUE;
-    $cond_2 = $is_authenticated !== FALSE && $even_time !== TRUE;
+    $cond_1 = $user->hasRole('manager') === TRUE && $even_time === TRUE;
+    $cond_2 = $user->isAuthenticated() === TRUE && $even_time !== TRUE;
   
     return AccessResult::allowedIf($cond_1 !== FALSE || $cond_2 !== FALSE);
-    
   }
 
   /**
