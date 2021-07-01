@@ -1,0 +1,11 @@
+uuid: fa29d881-b910-42f9-af4b-c01b9edaffce
+langcode: en
+status: true
+dependencies: {  }
+id: manager
+label: Manager
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'administer modules'
