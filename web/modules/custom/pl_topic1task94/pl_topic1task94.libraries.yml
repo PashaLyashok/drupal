@@ -1,0 +1,14 @@
+my-lib:
+  version: 1.x
+  css:
+    theme:
+      css/my-lib.css: {}
+  js:
+    js/my-lib.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    

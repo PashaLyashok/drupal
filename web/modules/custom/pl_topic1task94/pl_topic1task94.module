@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function pl_topic1task94_theme($existing, $type, $theme, $path) {
+  return [
+    'my_task94' => [
+      'variables' => ['data' => NULL],
+    ],
+  ];
+}
