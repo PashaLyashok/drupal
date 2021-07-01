@@ -18,13 +18,15 @@ class Task30 extends ControllerBase{
   public function access(AccountInterface $account) {
     $uid = $account->id();
     $user = User::load($uid);
+
     $request_time = \Drupal::time()
       ->getCurrentTime();
     $even_time = $request_time % 2;
-    $cond_1 = $user->hasRole('manager') === TRUE && $even_time === TRUE;
-    $cond_2 = $user->isAuthenticated() === TRUE && $even_time !== TRUE;
+    
+    $cond_1 = $user->hasRole('manager') && $even_time === TRUE;
+    $cond_2 = $user->isAuthenticated() && $even_time !== TRUE;
   
-    return AccessResult::allowedIf($cond_1 !== FALSE || $cond_2 !== FALSE);
+    return AccessResult::allowedIf($cond_1 || $cond_2);
   }
 
   /**
