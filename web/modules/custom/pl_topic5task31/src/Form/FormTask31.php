@@ -44,5 +44,4 @@ class FormTask31 extends FormBase {
         '@email' => $form_state->getValue('email'), 
     ]);
   }
-
 }
