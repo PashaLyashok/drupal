@@ -1,0 +1,7 @@
+name: pl_topic1task94
+description: page with block and js
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
+dependencies:
+  - block
