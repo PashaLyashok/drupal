@@ -1,0 +1,7 @@
+test.loc.topic5task31:
+  path: 'topic5task31'
+  defaults: 
+   _title: 'Custom form for Task31'
+   _form: 'Drupal\pl_topic5task31\Form\FormTask31'
+  requirements:
+    _permission: 'access content'
