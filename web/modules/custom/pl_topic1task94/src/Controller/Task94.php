@@ -13,8 +13,8 @@ class Task94 extends ControllerBase{
    * Returns a simple page with five nodes.
    */
   public function content() {    
-    date_default_timezone_set('Europe/Minsk');
-    $date = date('m/d/Y h:i:s a', time());
+    $date = date('m/d/Y H:i:s', \Drupal::time()
+      ->getCurrentTime());
     
     return [
         '#theme' => 'my_task94',
