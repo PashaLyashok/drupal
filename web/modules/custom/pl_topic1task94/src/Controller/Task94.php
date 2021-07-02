@@ -15,8 +15,6 @@ class Task94 extends ControllerBase {
    */
   public function content() {    
     $date = new DrupalDateTime();
-    $date = new \Drupal\Core\Datetime\DrupalDateTime(); 
-    $date->__toString();
     
     return [
         '#theme' => 'my_task94',
