@@ -1,0 +1,5 @@
+name: pl_topic5task31
+description: Page with my first custom form
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
