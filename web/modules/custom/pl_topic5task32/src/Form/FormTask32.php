@@ -13,32 +13,27 @@ use Drupal\taxonomy\Entity\Term;
 class FormTask32 extends FormBase {
 
   public function getCountriesNames() {
-
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid', 'country');
     $result = $query->execute();
 
     $countries = Term::loadMultiple($result);
-    $countries_list = [];
-    
+    $countries_list = [];  
     foreach ($countries as $country) {
       $countries_list[$country->id()] = $country->name->value;
     }
-
 
     return $countries_list;
   }
 
   public function getCitiesListByCountryId($country_id) {
-
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid', 'city');
     $query->condition('field_country', $country_id);
     $result = $query->execute();
 
     $cities = Term::loadMultiple($result);
-    $cities_list = [];//'' => '-- choose your country --',
-
+    $cities_list = [];
     foreach ($cities as $city) {
       $cities_list[$city->id()] = $city->name->value;
     }
@@ -51,7 +46,6 @@ class FormTask32 extends FormBase {
   }
 
   public function buildForm(array $form, FormStateInterface $form_state) {
-    
     $form['country'] = [
       '#type' => 'select',
       '#title' => $this->t('Country'),
@@ -101,12 +95,11 @@ class FormTask32 extends FormBase {
   }
 
   public function myAjaxCallback(array &$form, FormStateInterface $form_state) {
-    
+
     return $form['city']; 
   }
 
   public function submitForm(array &$form, FormStateInterface $form_state) {
-
     $city = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($form_state->getValue('city'));
     $city_title = $city->name->value;
 

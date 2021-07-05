@@ -1,7 +1,5 @@
-my-lib:
+task32-forms:
   version: 1.x
-  js:
-    js/my-lib.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax
