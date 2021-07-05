@@ -1,0 +1,21 @@
+uuid: d98fc521-bd37-42d0-90f4-f066af067f07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_country
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_country
+field_name: field_country
+entity_type: taxonomy_term
+bundle: city
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference
