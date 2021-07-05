@@ -6,4 +6,3 @@ task32-forms:
     - core/drupal
     - core/drupalSettings
     - core/jquery.once
-    
