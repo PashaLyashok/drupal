@@ -18,9 +18,7 @@ class FormTask32 extends FormBase {
   /**
    * Get from Taxonomy terms id and names of Countries for out select list.
    * 
-   * Return an array.
-   * 
-   * {@inheritdoc} 
+   * Return an array. 
    */
   public function getCountriesNames() {
     $query = \Drupal::entityQuery('taxonomy_term');
@@ -40,8 +38,6 @@ class FormTask32 extends FormBase {
    * Get from Taxonomy terms id and name of City whose parameter we pass through $country_id.
    * 
    * Return an array.
-   * 
-   * {@inheritdoc} 
    */
   public function getCitiesListByCountryId($country_id) {
     $query = \Drupal::entityQuery('taxonomy_term');
@@ -60,17 +56,13 @@ class FormTask32 extends FormBase {
 
   /**
    * Return a name of our form in string format.
-   * 
-   * {@inheritdoc} 
-   */
+  */
   public function getFormId() {
     return 'form_task32';
   }
 
   /**
    *  Output our form by path http://test.loc/topic5task32.
-   * 
-   * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['country'] = [
@@ -115,8 +107,6 @@ class FormTask32 extends FormBase {
 
   /**
    * Chech output data from form.
-   * 
-   * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     
@@ -128,8 +118,6 @@ class FormTask32 extends FormBase {
 
   /**
    * Ajax handler for our Ajax callback function.
-   * 
-   * {@inheritdoc}
    */
   public function myAjaxCallback(array &$form, FormStateInterface $form_state) {
 
@@ -138,8 +126,6 @@ class FormTask32 extends FormBase {
 
   /**
    * A handler for form submit.
-   * 
-   * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $city = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($form_state->getValue('city'));
