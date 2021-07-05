@@ -1,0 +1,7 @@
+test.loc.topic5task32:
+  path: 'topic5task32'
+  defaults: 
+   _title: 'Custom form for Task32'
+   _form: 'Drupal\pl_topic5task32\Form\FormTask32'
+  requirements:
+    _permission: 'access content'
