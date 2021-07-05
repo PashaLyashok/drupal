@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\pl_topic5task32\Form\CollectPhone.
+ * Contains \Drupal\pl_topic5task32\Form\FormTask32.
  */
 
 namespace Drupal\pl_topic5task32\Form;
@@ -10,8 +10,18 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\taxonomy\Entity\Term;
 
-class FormTask32 extends FormBase {
+/**
+ * Custom class for working with our form.
+ */
 
+class FormTask32 extends FormBase {
+  /**
+   * Get from Taxonomy terms id and names of Countries for out select list.
+   * 
+   * Return an array.
+   * 
+   * {@inheritdoc} 
+   */
   public function getCountriesNames() {
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid', 'country');
@@ -26,6 +36,13 @@ class FormTask32 extends FormBase {
     return $countries_list;
   }
 
+  /**
+   * Get from Taxonomy terms id and name of City whose parameter we pass through $country_id.
+   * 
+   * Return an array.
+   * 
+   * {@inheritdoc} 
+   */
   public function getCitiesListByCountryId($country_id) {
     $query = \Drupal::entityQuery('taxonomy_term');
     $query->condition('vid', 'city');
@@ -41,10 +58,20 @@ class FormTask32 extends FormBase {
     return $cities_list;
   }
 
+  /**
+   * Return a name of our form in string format.
+   * 
+   * {@inheritdoc} 
+   */
   public function getFormId() {
     return 'form_task32';
   }
 
+  /**
+   *  Output our form by path http://test.loc/topic5task32.
+   * 
+   * {@inheritdoc}
+   */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form['country'] = [
       '#type' => 'select',
@@ -86,6 +113,11 @@ class FormTask32 extends FormBase {
     return $form;
   }
 
+  /**
+   * Chech output data from form.
+   * 
+   * {@inheritdoc}
+   */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     
     $city = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($form_state->getValue('city'));
@@ -94,11 +126,21 @@ class FormTask32 extends FormBase {
     } 
   }
 
+  /**
+   * Ajax handler for our Ajax callback function.
+   * 
+   * {@inheritdoc}
+   */
   public function myAjaxCallback(array &$form, FormStateInterface $form_state) {
 
     return $form['city']; 
   }
 
+  /**
+   * A handler for form submit.
+   * 
+   * {@inheritdoc}
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $city = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($form_state->getValue('city'));
     $city_title = $city->name->value;
