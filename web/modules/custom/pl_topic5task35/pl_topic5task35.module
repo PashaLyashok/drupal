@@ -1,0 +1,11 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+/**
+ * Implements hook_form_alter().
+ */
+function pl_topic5task35_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['phone'] = [
+    '#type' => 'tel',
+    '#title' => 'Enter your phone',
+  ];
+}
