@@ -1,0 +1,22 @@
+uuid: 655adea1-3821-4a10-a75b-16b856128cfc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - PlTopic6Task61
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: PlTopic6Task61_local_tasks
+theme: PlTopic6Task61
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

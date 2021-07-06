@@ -1,0 +1,21 @@
+uuid: 9c5bee37-7545-4339-a68b-44d5b91eb6de
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - PlTopic6Task61
+id: PlTopic6Task61_searchform
+theme: PlTopic6Task61
+region: navigation
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

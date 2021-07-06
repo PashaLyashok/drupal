@@ -1,0 +1,22 @@
+uuid: 681baf30-ca72-4df1-b828-f2a4c2e244a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - PlTopic6Task61
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: PlTopic6Task61_help
+theme: PlTopic6Task61
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

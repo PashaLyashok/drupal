@@ -1,0 +1,20 @@
+uuid: f4eebace-2825-48d7-bd7c-53d150756e46
+langcode: en
+status: true
+dependencies:
+  theme:
+    - PlTopic6Task61
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: PlTopic6Task61_local_actions
+theme: PlTopic6Task61
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -50,7 +50,6 @@ module:
   pl_topic4task30: 0
   pl_topic5task31: 0
   pl_topic5task32: 0
-  pl_topic5task35: 0
   quickedit: 0
   rdf: 0
   search: 0
@@ -69,6 +68,8 @@ module:
 theme:
   bartik: 0
   seven: 0
+  bootstrap: 0
+  PlTopic6Task61: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
