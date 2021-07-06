@@ -1,0 +1,20 @@
+uuid: 2d8c2e74-26a6-43a8-bf5c-16c7f39c6c0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - pl_task95
+  theme:
+    - PlTopic6Task61
+id: PlTopic6Task61_helloblock
+theme: PlTopic6Task61
+region: sidebar_first
+weight: 0
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello block'
+  provider: pl_task95
+  label_display: visible
+visibility: {  }

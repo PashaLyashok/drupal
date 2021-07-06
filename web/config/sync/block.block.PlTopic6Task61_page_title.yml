@@ -1,0 +1,20 @@
+uuid: b127e80e-6006-465b-89c8-f0f3cc80fb65
+langcode: en
+status: true
+dependencies:
+  theme:
+    - PlTopic6Task61
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: PlTopic6Task61_page_title
+theme: PlTopic6Task61
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

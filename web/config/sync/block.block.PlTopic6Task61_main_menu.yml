@@ -1,0 +1,27 @@
+uuid: 8a556ab9-84b7-4329-8114-9a488591efb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - PlTopic6Task61
+_core:
+  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+id: PlTopic6Task61_main_menu
+theme: PlTopic6Task61
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }
