@@ -2,7 +2,7 @@ type: theme
 base theme: bootstrap
 core_version_requirement: ^8 || ^9
 
-name: 'MyCustomTheme'
+name: 'PlTopic6Task61'
 description: 'A Drupal Bootstrap 3 based sub-theme.'
 package: 'Bootstrap'
 

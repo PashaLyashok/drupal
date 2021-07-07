@@ -1,8 +1,15 @@
 <?php
-
 /**
  * @file
  * Bootstrap sub-theme.
  *
  * Place your custom PHP code in this file.
  */
+
+function PlTopic6Task61_preprocess_html(&$variables) {
+  $node = \Drupal::request()->attributes->get('node');
+  if (!empty($node)) {
+    $nid = $node->id();
+    $variables['attributes']['class'][] = ($nid % 2 === 0) ? 'day' : 'night';
+  }
+}
