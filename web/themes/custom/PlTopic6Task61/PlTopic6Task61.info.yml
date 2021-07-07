@@ -12,6 +12,7 @@ regions:
   header: 'Top Bar'
   highlighted: 'Highlighted'
   help: 'Help'
+  barsik_region: 'Barsik region'
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
