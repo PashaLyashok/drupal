@@ -1,0 +1,5 @@
+name: pl_topic7task70
+description: task70
+core_version_requirement: ^8 || ^9
+type: module
+package: PL

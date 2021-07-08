@@ -50,6 +50,7 @@ module:
   pl_topic4task30: 0
   pl_topic5task31: 0
   pl_topic5task32: 0
+  pl_topic7task70: 0
   quickedit: 0
   rdf: 0
   search: 0
@@ -59,6 +60,7 @@ module:
   text: 0
   toolbar: 0
   tour: 0
+  ultimate_cron: 0
   update: 0
   user: 0
   views_field_view: 0

@@ -1,0 +1,25 @@
+<?php
+use Drupal\Core\Datetime\DrupalDateTime;
+use \Drupal\user\Entity\User;
+/**
+ * Implements hook_cron().
+ */
+function pl_topic7task70_cron() {
+  $date = new DrupalDateTime();
+  $current_month = $date->format('m');
+  $current_day = $date->format('d');
+
+  $query = \Drupal::entityQuery('user')
+    ->condition('status', 1)
+    ->execute();
+  $users = User::loadMultiple($query); 
+  foreach ($users as $user) {
+    if (!empty($user->get('field_birthday')->getValue())) {      
+      $user_day = DrupalDateTime::createFromFormat('Y-m-d', $user->get('field_birthday')->getValue()[0]['value'])->format('d');
+      $user_month = DrupalDateTime::createFromFormat('Y-m-d', $user->get('field_birthday')->getValue()[0]['value'])->format('m');
+      if ($current_month === $user_month && $current_day === $user_day) {
+        \Drupal::logger('birthday')->info('Happy Birthday ' . $user->name->value . '!');
+      }
+    }
+  }
+}

@@ -26,6 +26,7 @@
         "drupal/module_filter": "3.2",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.6",
+        "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_field_view": "^1.0@beta",
         "drush/drush": "^10.5"
     },
