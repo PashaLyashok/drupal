@@ -6,33 +6,20 @@ use \Drupal\user\Entity\User;
  */
 function pl_topic7task70_cron() {
   $date = new DrupalDateTime();
-  $current_date = $date->format('m-d');
+  $current_month = $date->format('m');
+  $current_day = $date->format('d');
 
   $query = \Drupal::entityQuery('user')
     ->condition('status', 1)
     ->execute();
   $users = User::loadMultiple($query); 
-  $users_have_birthday = [];
-  $birthdays_list = [];
-
   foreach ($users as $user) {
-    if (!empty($user->get('field_birthday')->getValue())) {
-      $users_have_birthday[$user->id()] = $user->get('field_birthday')->getValue();
+    if (!empty($user->get('field_birthday')->getValue())) {      
+      $user_day = DrupalDateTime::createFromFormat('Y-m-d', $user->get('field_birthday')->getValue()[0]['value'])->format('d');
+      $user_month = DrupalDateTime::createFromFormat('Y-m-d', $user->get('field_birthday')->getValue()[0]['value'])->format('m');
+      if ($current_month === $user_month && $current_day === $user_day) {
+        \Drupal::logger('birthday')->info('Happy Birthday ' . $user->name->value . '!');
+      }
     }
   }
-
-  foreach ($users_have_birthday as $id => $value) {
-    $birthday = $value[0]['value'];
-    $day_month = stristr($birthday, $current_date);
-    if (!empty($day_month)) {
-      $birthdays_list[] = $id;
-    } else {
-      continue;
-    }
-  }
-
-  $user_happy_birthday = User::load($birthdays_list[0]);
-  $user_name = $user_happy_birthday->name->value;
-
-  \Drupal::logger('birthday')->info('Happy Birthday ' . $user_name . '!');
 }
