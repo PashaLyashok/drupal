@@ -1,0 +1,38 @@
+<?php
+use Drupal\Core\Datetime\DrupalDateTime;
+
+/**
+ * Implements hook_cron().
+ */
+function pl_topic7task70_cron() {
+  $date = new DrupalDateTime();
+  $current_date = $date->format('m-d');
+
+  $query = \Drupal::entityQuery('user')
+    ->condition('status', 1)
+    ->execute();
+  $users = \Drupal\user\Entity\User::loadMultiple($query); 
+  $users_have_birthday = [];
+  $birthdays_list = [];
+
+  foreach ($users as $user) {
+    if (sizeof($user->get('field_birthday')->getValue()) > 0) {
+      $users_have_birthday[$user->id()] = $user->get('field_birthday')->getValue();
+    }
+  }
+
+  foreach ($users_have_birthday as $id => $value) {
+    $birthday = $value[0]['value'];
+    $day_month = stristr($birthday, $current_date);
+    if (!empty($day_month)) {
+      $birthdays_list[] = $id;
+    } else {
+      continue;
+    }
+  }
+
+  $user_happy_birthday = \Drupal\user\Entity\User::load($birthdays_list[0]);
+  $user_name = $user_happy_birthday->name->value;
+
+  \Drupal::logger('birthday')->info('Happy Birthday ' . $user_name . '!');
+}

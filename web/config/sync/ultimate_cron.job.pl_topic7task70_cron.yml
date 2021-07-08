@@ -1,0 +1,17 @@
+uuid: d22fb97b-1ab0-4a42-8442-e000e70cf8ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - pl_topic7task70
+title: 'Default cron handler'
+id: pl_topic7task70_cron
+weight: 0
+module: pl_topic7task70
+callback: pl_topic7task70_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database
