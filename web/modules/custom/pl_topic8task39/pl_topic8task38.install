@@ -1,0 +1,18 @@
+<?php
+use Drupal\taxonomy\Entity\Term;
+
+function pl_topic8task38_update_9100() {
+  $term = Term::create([
+    'vid' => 'country',
+    'name' => 'Ukraine', 
+  ]);
+  $term->save();
+}
+
+function pl_topic8task38_update_9101() {
+    $term = Term::create([
+      'vid' => 'country',
+      'name' => 'Ukraine', 
+    ]);
+    $term->save();
+  }

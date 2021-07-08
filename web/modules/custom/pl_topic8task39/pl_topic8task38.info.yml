@@ -1,0 +1,7 @@
+name: pl_topic8task38
+description: add data to taxonomy table
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
+version: '9.x -1.x'
+
