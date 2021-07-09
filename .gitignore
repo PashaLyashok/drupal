@@ -23,3 +23,4 @@
 
 # Ignore .env files as they are personal
 /.env
+web/modules/custom/pl_topic8task37/users.csv
