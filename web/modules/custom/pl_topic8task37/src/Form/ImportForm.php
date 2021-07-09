@@ -52,32 +52,6 @@ class ImportForm extends ConfigFormBase {
       '#weight' => 100,
     ];
 
-    $form['additional_settings'] = [
-      '#type' => 'fieldset',
-      '#title' => t('Additional settings'),
-    ];
-
-    $form['additional_settings']['skip_first_line'] = [
-      '#type' => 'checkbox',
-      '#title' => $this->t('Skip first line'),
-      '#default_value' => $config->get('skip_first_line'),
-      '#description' => $this->t('If file contain titles, this checkbox help to skip first line.'),
-    ];
-
-    $form['additional_settings']['delimiter'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('Delimiter'),
-      '#default_value' => $config->get('delimiter'),
-      '#required' => TRUE,
-    ];
-
-    $form['additional_settings']['enclosure'] = [
-      '#type' => 'textfield',
-      '#title' => $this->t('Enclosure'),
-      '#default_value' => $config->get('enclosure'),
-      '#required' => TRUE,
-    ];
-
     # Если загружен файл, отображаем дополнительные элементы формы.
     if (!empty($config->get('fid'))) {
       $file = File::load($config->get('fid'));
