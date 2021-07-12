@@ -9,14 +9,14 @@ use Drupal\Component\Utility\Random;
 /**
  * Methods for running the CSV import in a batch.
  *
- * @package Drupal\csvimport
+ * @package Drupal\pl_topic8task37
  */
 class CsvImportBatch {
 
   /**
    * Handle batch completion.
    *
-   *   Creates a new CSV file containing all failed rows if any.
+   *  Creates a new CSV file containing all failed rows.
    */
   public static function csvimportImportFinished($success, $results, $operations) {
 
@@ -59,11 +59,16 @@ class CsvImportBatch {
     return  $messenger->addMessage('The CSV import has completed.', 'status');
   }
 
+  /**
+   * Remember the uploaded CSV filename.
+   */
   public static function csvimportRememberFilename($filename, &$context) {
-
     $context['results']['uploaded_filename'] = $filename;
   }
 
+  /**
+   *  A single line handler in csv file.
+   */
   public static function csvimportImportLine($line, &$context) {
 
     $context['results']['rows_imported']++;

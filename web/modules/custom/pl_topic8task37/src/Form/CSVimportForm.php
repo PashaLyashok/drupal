@@ -12,14 +12,14 @@ use Drupal\Core\Form\FormStateInterface;
 class CsvImportForm extends FormBase {
 
   /**
-   * {@inheritdoc}
+   * Return a form name in string format.
    */
   public function getFormId() {
     return 'csvimport_form';
   }
 
   /**
-   * {@inheritdoc}
+   * Output csvimport_form by path http://test.loc/topic8task37
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
 
@@ -67,6 +67,9 @@ class CsvImportForm extends FormBase {
     }
   }
 
+  /**
+   * A handler for form submit.
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $batch = [
       'title'            => $this->t('Importing CSV ...'),
