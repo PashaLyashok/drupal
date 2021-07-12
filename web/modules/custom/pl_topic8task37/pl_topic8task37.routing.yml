@@ -1,0 +1,7 @@
+pl_topic8task37:
+  path: /pl_topic8task37
+  defaults:
+    _form: \Drupal\pl_topic8task37\Form\CsvImportForm
+    _title: Import CSV
+  requirements:
+    _permission: administer site configuration
