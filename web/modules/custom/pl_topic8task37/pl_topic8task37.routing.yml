@@ -1,8 +1,7 @@
-test.loc.topic8task37:
-  path: '/topic8task37'
-  defaults: 
-   _title: 'import csv'
-   _form: 'Drupal\pl_topic8task37\Form\ImportForm'
+pl_topic8task37:
+  path: /pl_topic8task37
+  defaults:
+    _form: \Drupal\pl_topic8task37\Form\CsvImportForm
+    _title: Import CSV
   requirements:
-    _permission: 'access content'
-    
+    _permission: administer site configuration

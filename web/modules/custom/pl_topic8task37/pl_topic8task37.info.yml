@@ -1,7 +1,5 @@
 name: pl_topic8task37
-description: 'Users CSV import'
-core_version_requirement: ^8 || ^9
 type: module
+description: Demonstrates batch processing a CSV import.
+core_version_requirement: ^8 || ^9
 package: PL
-version: '9.x -1.x'
-
