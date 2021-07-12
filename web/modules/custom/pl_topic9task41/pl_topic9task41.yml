@@ -1,0 +1,37 @@
+uuid: 1bcec3e7-0a49-4473-87a2-6dca09b91-users
+id: users_import
+label: Import users
+migration_group: users
+
+source:
+  plugin: 'csv'
+  path: 'C:\xampp\htdocs\test.loc\web\modules\custom\pl_topic8task37\users.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - id
+  fields:
+    0: 
+      name: id
+      label: 'Uniq Id'
+    1:
+      name: email
+      label: 'Email Address'
+    2:
+      name: password
+      label: 'Password'
+    3:
+      name: login
+      label: 'Login'
+process:
+  name: login
+  mail: email
+  pass: password
+  status: 1
+  init: email
+  type:
+    plugin: default_value
+    default_value: user
+destination:
+  plugin: entity:user

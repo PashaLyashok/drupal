@@ -23,6 +23,9 @@
         "drupal/ctools": "^3.7",
         "drupal/devel": "4.1",
         "drupal/features": "^3.12",
+        "drupal/migrate_plus": "^5.1",
+        "drupal/migrate_source_csv": "^3.4",
+        "drupal/migrate_tools": "^5.0",
         "drupal/module_filter": "3.2",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.6",
@@ -33,7 +36,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true

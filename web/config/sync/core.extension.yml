@@ -31,6 +31,10 @@ module:
   link: 0
   menu_link_content: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_source_csv: 0
+  migrate_tools: 0
   module_filter: 0
   node: 0
   options: 0
@@ -51,6 +55,7 @@ module:
   pl_topic5task31: 0
   pl_topic5task32: 0
   pl_topic7task70: 0
+  pl_topic8task37: 0
   pl_topic8task38: 0
   quickedit: 0
   rdf: 0
