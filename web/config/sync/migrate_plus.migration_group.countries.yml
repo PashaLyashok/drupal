@@ -1,0 +1,10 @@
+uuid: bbc4cedd-b26f-4df1-b26f-510a1514853a
+langcode: en
+status: true
+dependencies: {  }
+id: countries
+label: countries
+description: ''
+source_type: csv
+module: null
+shared_configuration: null

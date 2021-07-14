@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2edde78564736729c794d23ac6e0a3e5",
+    "content-hash": "ffdf6177692224fe9d3b182f20979d44",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3187,6 +3187,72 @@
                 "source": "http://git.drupal.org/project/panels.git",
                 "issues": "https://www.drupal.org/project/issues/panels",
                 "irc": "irc://irc.freenode.org/drupal-scotch"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_import",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/taxonomy_import.git",
+                "reference": "2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_import-2.0.3.zip",
+                "reference": "2.0.3",
+                "shasum": "89a5e49afb1549b63024ad42f493bcedd16883ea"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.3",
+                    "datestamp": "1623840698",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "AswathyAjish",
+                    "homepage": "https://www.drupal.org/user/2584696"
+                },
+                {
+                    "name": "colan",
+                    "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "neethups",
+                    "homepage": "https://www.drupal.org/user/3516137"
+                },
+                {
+                    "name": "sajiniantony",
+                    "homepage": "https://www.drupal.org/user/2603884"
+                },
+                {
+                    "name": "vuil",
+                    "homepage": "https://www.drupal.org/user/3568458"
+                }
+            ],
+            "description": "A module to import taxonomy using CSV or XML file to a user defined vocabulary.",
+            "homepage": "https://www.drupal.org/project/taxonomy_import",
+            "keywords": [
+                "Drupal",
+                "taxonomy_import"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/taxonomy_import",
+                "issues": "https://www.drupal.org/project/issues/taxonomy_import",
+                "documentation": "https://www.drupal.org/project/taxonomy_import"
             }
         },
         {

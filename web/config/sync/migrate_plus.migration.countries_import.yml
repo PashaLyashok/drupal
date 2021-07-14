@@ -1,0 +1,38 @@
+uuid: 1bcec3e7-0a49-4473-87a2-0000
+langcode: en
+status: true
+dependencies: {  }
+id: countries_import
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: countries
+label: 'Import countries'
+source:
+  plugin: csv
+  path: 'C:\xampp\htdocs\test.loc\web\modules\custom\pl_topic9task9\countries.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - old_id
+  fields:
+    -
+      name: id
+      label: 'Uniq Id'
+    -
+      name: country
+      label: Country
+    -
+      name: old_id
+      label: 'Old Id'
+process:
+  name: country
+  vid:
+    plugin: default_value
+    default_value: country
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: country
+migration_dependencies: null

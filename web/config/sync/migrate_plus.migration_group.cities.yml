@@ -1,0 +1,10 @@
+uuid: b793403e-b7ee-4ad2-8115-44a880cfdecf
+langcode: en
+status: true
+dependencies: {  }
+id: cities
+label: cities
+description: ''
+source_type: ''
+module: null
+shared_configuration: null
