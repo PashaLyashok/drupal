@@ -1,8 +1,8 @@
-uuid: c8842866-cced-4196-a8ac-549feed8ef21
+uuid: 4e3013f5-08d2-41be-aa25-7acd323aa64b
 langcode: en
 status: true
 dependencies: {  }
 name: Country
 vid: country
-description: countries
+description: ''
 weight: 0
