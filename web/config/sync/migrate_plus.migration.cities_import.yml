@@ -21,6 +21,7 @@ source:
     -
       name: id
       label: 'Uniq Id'
+      type: string
     -
       name: city
       label: City
@@ -28,7 +29,12 @@ source:
       name: country_id
       label: 'Country Id'
 process:
-  name: city
+  name:
+    plugin: concat
+    source:
+      - city
+      - id
+    delimiter: ' - '
   vid:
     plugin: default_value
     default_value: city
