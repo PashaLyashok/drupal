@@ -30,12 +30,23 @@ source:
     -
       name: login
       label: Login
+    -
+      name: firstname
+      label: Firstname
+    -
+      name: surname
+      label: Surname
 process:
   name: login
   mail: email
   pass: password
-  status: '1'
+  status:
+    plugin: default_value
+    default_value: '1'
   init: email
+  field_full_name:
+    plugin: custom_plugin
+    source: [firstname, surname]
   type:
     plugin: default_value
     default_value: user

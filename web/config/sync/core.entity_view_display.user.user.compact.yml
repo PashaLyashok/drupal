@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_birthday
+    - field.field.user.user.field_full_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,4 +29,5 @@ content:
     label: hidden
 hidden:
   field_birthday: true
+  field_full_name: true
   member_for: true
