@@ -45,11 +45,8 @@ process:
     default_value: '1'
   init: email
   field_full_name:
-    plugin: concat
-    source:
-      - firstname
-      - surname
-    delimiter: ' - '
+    plugin: custom_plugin
+    source: [firstname, surname]
   type:
     plugin: default_value
     default_value: user
