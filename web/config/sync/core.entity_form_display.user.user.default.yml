@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_birthday
+    - field.field.user.user.field_full_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,6 +29,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_full_name:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   language:
     weight: 0

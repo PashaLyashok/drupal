@@ -1,6 +1,6 @@
-id,email,password,login
-1,user01@example.ru,1111,user-test1
-2,user02@example.ru,2222,user-test2
-3,user03@example.ru,3333,user-test3
-4,user04@example.ru,4444,user-test4
-5,user05@example.ru,5555,user-test5
+id,email,password,login,'firstname','surname'
+1,user01@example.ru,1111,user-test1,Ivan,Ivanov
+2,user02@example.ru,2222,user-test2,Pavel,Ivanov
+3,user03@example.ru,3333,user-test3,Peter,Ivanov
+4,user04@example.ru,4444,user-test4,John,Ivanov
+5,user05@example.ru,5555,user-test5,Jack,Ivanov
