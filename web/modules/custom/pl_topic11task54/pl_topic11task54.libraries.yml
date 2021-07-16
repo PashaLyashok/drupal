@@ -4,8 +4,4 @@ js_task54:
     js/script.js: {}
   dependencies:
     - core/jquery
-    - core/drupal.ajax
     - core/drupal
-    - core/drupalSettings
-    - core/jquery.once
-    
