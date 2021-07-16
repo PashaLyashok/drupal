@@ -1,0 +1,7 @@
+pl_topic11task56.routing:
+  path: '/topic11task56'
+  defaults:
+    _title: 'Modal window'
+    _controller: '\Drupal\pl_topic11task56\Controller\AjaxLinkController::customAjaxLinkAlert'
+  requirements:
+    _permission: 'access content'
