@@ -1,0 +1,7 @@
+pl_topic11task55.routing:
+  path: '/topic11task55-ajax-link'
+  defaults:
+    _title: 'Custom Ajax Link'
+    _controller: '\Drupal\pl_topic11task55\Controller\AjaxLinkController::customAjaxLinkAlert'
+  requirements:
+    _permission: 'access content'

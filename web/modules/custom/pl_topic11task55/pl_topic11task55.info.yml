@@ -1,0 +1,5 @@
+name: pl_topic11task55
+description: My costom block with link to ajax
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
