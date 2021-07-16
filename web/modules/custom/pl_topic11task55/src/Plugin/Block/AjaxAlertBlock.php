@@ -24,10 +24,9 @@ class AjaxAlertBlock extends BlockBase {
    * Returns a block with link to js function alert('myMessage').
    */
   public function build() {
-    $query = ['foo' => 'bar'];
+    $query = [];
     $options = array(
-      'fragment' => 'anchor-div',
-      'attributes' => ['class' => ['use-ajax'], 'rel' => 'nofollow'],
+      'attributes' => ['class' => ['use-ajax']],
     );
     $url = Url::fromRoute('pl_topic11task55.routing', $query, $options);
     $internal_link = Link::fromTextAndUrl($this->t('Click for Alert'), $url);
