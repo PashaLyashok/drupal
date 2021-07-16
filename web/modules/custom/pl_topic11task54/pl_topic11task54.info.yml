@@ -1,0 +1,5 @@
+name: pl_topic11task54
+description: require js into page by path test.loc/topic11task54
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
