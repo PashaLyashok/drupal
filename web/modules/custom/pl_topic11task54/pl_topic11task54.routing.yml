@@ -1,0 +1,7 @@
+test.loc.topic11task54:
+  path: 'topic11task54'
+  defaults: 
+   _controller: '\Drupal\pl_topic11task54\Controller\Task54::content'
+   _title: 'JS Alert with custom message'
+  requirements:
+   _permission: 'access content'
