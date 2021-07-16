@@ -7,7 +7,8 @@
 namespace Drupal\pl_topic11task55\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-
+use Drupal\Core\Url;
+use Drupal\Core\Link;
 /**
  * Provides a 'AjaxAlertBlock' Block.
  *
@@ -23,11 +24,17 @@ class AjaxAlertBlock extends BlockBase {
    * Returns a block with link to js function alert('myMessage').
    */
   public function build() {
-    
-    $renderable = [
-      '#markup' => '<a class="use-ajax" href="/topic11task55-ajax-link">Click for Alert</a>',
+    $query = ['foo' => 'bar'];
+    $options = array(
+      'fragment' => 'anchor-div',
+      'attributes' => ['class' => ['use-ajax'], 'rel' => 'nofollow'],
+    );
+    $url = Url::fromRoute('pl_topic11task55.routing', $query, $options);
+    $internal_link = Link::fromTextAndUrl($this->t('Click for Alert'), $url);
+    $internal_link = $internal_link->toString();
+
+    return [
+      '#markup' => $internal_link,
     ];
-  
-    return $renderable;
   }
 }
