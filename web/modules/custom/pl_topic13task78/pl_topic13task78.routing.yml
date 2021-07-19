@@ -1,0 +1,7 @@
+test.loc.topic13task78:
+  path: '/testcashe'
+  defaults: 
+   _controller: '\Drupal\pl_topic13task78\Controller\Task78::content'
+   _title: 'A test page with output of current user'
+  requirements:
+   _permission: 'access content'

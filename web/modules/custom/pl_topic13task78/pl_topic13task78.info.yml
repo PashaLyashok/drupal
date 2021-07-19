@@ -1,0 +1,5 @@
+name: pl_topic13task78
+description: Testing cache page
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
