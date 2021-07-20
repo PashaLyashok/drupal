@@ -1,0 +1,19 @@
+uuid: f8cb02bf-fa6b-4444-bdf6-3a95f915ea5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_latitude
+    - paragraphs.paragraphs_type.task52
+id: paragraph.task52.field_latitude
+field_name: field_latitude
+entity_type: paragraph
+bundle: task52
+label: Latitude
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

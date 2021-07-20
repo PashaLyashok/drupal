@@ -17,6 +17,7 @@ module:
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -43,10 +44,15 @@ module:
   page_manager_ui: 0
   panels: 0
   panels_ipe: 0
+  paragraphs_type_permissions: 0
   path: 0
   path_alias: 0
   pl_task82: 0
   pl_task95: 0
+  pl_topic11task54: 0
+  pl_topic11task55: 0
+  pl_topic11task56: 0
+  pl_topic13task78: 0
   pl_topic1task93: 0
   pl_topic1task94: 0
   pl_topic4task27: 0
@@ -73,6 +79,7 @@ module:
   views_field_view: 0
   views_ui: 0
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   bartik: 0

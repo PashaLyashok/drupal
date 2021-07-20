@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.book.field_book_isbn
     - field.field.node.book.field_book_signing
     - field.field.node.book.field_book_writing
+    - field.field.node.book.field_custom_paragraph
     - image.style.custom
     - node.type.book
   module:
     - datetime
+    - entity_reference_revisions
     - image
     - text
     - user
@@ -81,6 +83,15 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_custom_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
   links:
     weight: 100

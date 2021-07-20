@@ -10,11 +10,13 @@ dependencies:
     - field.field.node.book.field_book_isbn
     - field.field.node.book.field_book_signing
     - field.field.node.book.field_book_writing
+    - field.field.node.book.field_custom_paragraph
     - image.style.thumbnail
     - node.type.book
   module:
     - datetime
     - image
+    - paragraphs
     - path
     - text
 id: node.book.default
@@ -79,6 +81,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_custom_paragraph:
+    type: entity_reference_paragraphs
+    weight: 128
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   path:
     type: path

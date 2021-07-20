@@ -1,0 +1,30 @@
+uuid: 64b2ff46-3614-4bc5-95ac-bc858742dbff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.task52.field_latitude
+    - field.field.paragraph.task52.field_longitude
+    - paragraphs.paragraphs_type.task52
+id: paragraph.task52.default
+targetEntityType: paragraph
+bundle: task52
+mode: default
+content:
+  field_latitude:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_longitude:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: ff213878-440e-402a-9d51-944bd715bda0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.task52.field_latitude
+    - field.field.paragraph.task52.field_longitude
+    - paragraphs.paragraphs_type.task52
+id: paragraph.task52.default
+targetEntityType: paragraph
+bundle: task52
+mode: default
+content:
+  field_latitude:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_longitude:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

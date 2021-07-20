@@ -1,0 +1,20 @@
+uuid: d807d5b8-fb02-4f32-b276-99d1879bf631
+langcode: en
+status: true
+dependencies:
+  module:
+    - pl_topic11task55
+  theme:
+    - PlTopic6Task61
+id: ajaxalert
+theme: PlTopic6Task61
+region: sidebar_first
+weight: 0
+provider: null
+plugin: ajax_alert
+settings:
+  id: ajax_alert
+  label: 'Ajax alert'
+  provider: pl_topic11task55
+  label_display: visible
+visibility: {  }
