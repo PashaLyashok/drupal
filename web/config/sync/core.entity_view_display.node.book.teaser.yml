@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.book.field_book_isbn
     - field.field.node.book.field_book_signing
     - field.field.node.book.field_book_writing
+    - field.field.node.book.field_custom_paragraph
     - node.type.book
   module:
     - user
@@ -32,3 +33,4 @@ hidden:
   field_book_isbn: true
   field_book_signing: true
   field_book_writing: true
+  field_custom_paragraph: true

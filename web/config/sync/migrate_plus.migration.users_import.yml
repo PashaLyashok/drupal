@@ -46,7 +46,9 @@ process:
   init: email
   field_full_name:
     plugin: custom_plugin
-    source: [firstname, surname]
+    source:
+      - firstname
+      - surname
   type:
     plugin: default_value
     default_value: user

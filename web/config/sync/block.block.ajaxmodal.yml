@@ -1,0 +1,20 @@
+uuid: 49b3860f-54bb-4ffe-bb16-66a10d78b59c
+langcode: en
+status: true
+dependencies:
+  module:
+    - pl_topic11task56
+  theme:
+    - PlTopic6Task61
+id: ajaxmodal
+theme: PlTopic6Task61
+region: sidebar_first
+weight: 0
+provider: null
+plugin: ajax_modal_window
+settings:
+  id: ajax_modal_window
+  label: 'Ajax modal'
+  provider: pl_topic11task56
+  label_display: visible
+visibility: {  }
