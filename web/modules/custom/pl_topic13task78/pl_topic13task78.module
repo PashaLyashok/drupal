@@ -1,0 +1,16 @@
+<?php
+use Drupal\user\Entity\User;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Cache\CacheTagsInvalidator;
+/**
+ * Implements hook_user_update().
+ */
+function pl_topic13task78_user_update(AccountInterface $account) {
+  $user = User::load($account->id());
+  $original_value = $account->original->name->getValue();
+  $updated_value = $user->name->getValue();
+  if ($original_value != $updated_value) {
+    \Drupal::service('cache_tags.invalidator')
+    ->invalidateTags(['user:'.$account->id()]);
+  }
+}
