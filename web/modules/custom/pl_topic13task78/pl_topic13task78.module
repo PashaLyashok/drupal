@@ -1,0 +1,17 @@
+<?php
+use Drupal\user\Entity\User;
+use Drupal\Core\Entity\EntityInterface;
+/**
+ * Implements hook_user_update().
+ */
+function pl_topic13task78_user_update(EntityInterface $account) {
+  $user = User::load($account->id());
+  $original_value = $account->original->name->getValue()[0]['value'];
+  $updated_value = $user->name->getValue()[0]['value'];
+  if ($original_value !== $updated_value) {
+    drupal_flush_all_caches();
+    \Drupal\Core\Cache\Cache::invalidateTags([
+      'user:' . $account->id(),
+    ]);
+  }
+}
