@@ -1,0 +1,7 @@
+name: pl_topic13task80
+description: contains token with link to google search
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
+dependencies:
+  - token
