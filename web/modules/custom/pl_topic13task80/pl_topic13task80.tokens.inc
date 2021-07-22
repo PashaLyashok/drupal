@@ -37,7 +37,7 @@ function pl_topic13task80_tokens($type, $tokens, array $data, array $options, Bu
     foreach ($tokens as $name => $original) {
       switch ($name) {
         case 'link_to_google':
-          $replacements[$original] = \Drupal\Core\Render\Markup::create('<a href="http://google.com" target="_blanc">google.com</a>');
+          $replacements[$original] = \Drupal\Core\Render\Markup::create('<a href="http://google.com" target="_blank">google.com</a>');
           break;
       }
     }
