@@ -1,0 +1,12 @@
+<?php
+use Drupal\node\NodeInterface;
+use Drupal\node\Entity\Node;
+/**
+ * Implements hook_node_update().
+ */
+function pl_topic1task118_node_update(NodeInterface $node) {
+  \Drupal::logger('Node Updates')->notice('Node with title @title of type @type has been updated', [
+    '@title' => $node->title->getValue()[0]['value'],
+    '@type' => $node->bundle(),
+  ]);
+}
