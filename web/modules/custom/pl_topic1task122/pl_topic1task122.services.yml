@@ -1,0 +1,6 @@
+services:
+  pl_topic1task122.task122_subscriber:
+    class: Drupal\pl_topic1task122\EventSubscriber\Task122Subscriber
+    tags:
+      - { name: event_subscriber }
+      

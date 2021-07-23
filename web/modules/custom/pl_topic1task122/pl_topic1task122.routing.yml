@@ -1,0 +1,7 @@
+test.loc.topic1task122:
+  path: 'simple'
+  defaults: 
+   _controller: '\Drupal\pl_topic1task122\Controller\Task122::content'
+   _title: 'Example page'
+  requirements:
+   _permission: 'access content'
