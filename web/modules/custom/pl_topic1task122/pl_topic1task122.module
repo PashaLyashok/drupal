@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Custom hooks and functions for module.
+ */
+use Drupal\pl_topic1task122\Event\SimplePageLoad;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function pl_topic1task122_preprocess_html(&$variables) {
+  /** @var \Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher $dispatcher */
+  $dispatcher = \Drupal::service('event_dispatcher');
+  // Create event object passing arguments.
+  $event = new SimplePageLoad($variables);
+  // Call it.
+  $dispatcher->dispatch(SimplePageLoad::PREPROCESS_HTML, $event);
+}
