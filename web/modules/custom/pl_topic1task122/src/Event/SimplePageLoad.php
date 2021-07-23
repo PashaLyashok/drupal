@@ -31,5 +31,4 @@ class SimplePageLoad extends Event {
   public function getVariables() {
     return $this->variables;
   }
-
 }
