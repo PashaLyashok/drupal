@@ -1,0 +1,5 @@
+name: pl_topic13task83
+description: api to browse all users
+core_version_requirement: ^8 || ^9
+type: module
+package: PL
