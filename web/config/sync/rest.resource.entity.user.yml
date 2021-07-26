@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - basic_auth
     - serialization
     - user
 id: entity.user
@@ -14,4 +15,4 @@ configuration:
   formats:
     - json
   authentication:
-    - cookie
+    - basic_auth
