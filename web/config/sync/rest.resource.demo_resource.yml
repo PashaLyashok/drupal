@@ -1,0 +1,18 @@
+uuid: 97f341eb-d033-4cfb-83ed-6e159ff56f2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - pl_topic13task83
+    - serialization
+    - user
+id: demo_resource
+plugin_id: demo_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

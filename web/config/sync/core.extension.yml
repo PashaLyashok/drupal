@@ -37,6 +37,7 @@ module:
   migrate_source_csv: 0
   migrate_tools: 0
   module_filter: 0
+  module_missing_message_fixer: 0
   node: 0
   options: 0
   page_cache: 0
@@ -53,6 +54,11 @@ module:
   pl_topic11task55: 0
   pl_topic11task56: 0
   pl_topic13task78: 0
+  pl_topic13task80: 0
+  pl_topic13task83: 0
+  pl_topic1task113: 0
+  pl_topic1task118: 0
+  pl_topic1task122: 0
   pl_topic1task93: 0
   pl_topic1task94: 0
   pl_topic4task27: 0
@@ -66,12 +72,18 @@ module:
   pl_topic9task42: 0
   quickedit: 0
   rdf: 0
+  rest: 0
+  restui: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
+  token_filter: 0
   toolbar: 0
+  topic13task83: 0
   tour: 0
   ultimate_cron: 0
   update: 0
