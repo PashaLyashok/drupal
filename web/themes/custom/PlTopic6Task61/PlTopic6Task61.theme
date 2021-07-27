@@ -13,3 +13,7 @@ function PlTopic6Task61_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = ($nid % 2 === 0) ? 'day' : 'night';
   }
 }
+
+function PlTopic6Task61_preprocess_node__book(&$variables) {
+  return $variables['custom_text'] = 'BOOK TYPE OF NODE';
+}
