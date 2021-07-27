@@ -15,5 +15,5 @@ function PlTopic6Task61_preprocess_html(&$variables) {
 }
 
 function PlTopic6Task61_preprocess_node__book(&$variables) {
-  return $variables['custom_text'] = 'BOOK TYPE OF NODE';
+  $variables['custom_text'] = 'BOOK TYPE OF NODE';
 }
