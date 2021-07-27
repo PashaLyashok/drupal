@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Bootstrap sub-theme.
@@ -12,4 +13,8 @@ function PlTopic6Task61_preprocess_html(&$variables) {
     $nid = $node->id();
     $variables['attributes']['class'][] = ($nid % 2 === 0) ? 'day' : 'night';
   }
+}
+
+function PlTopic6Task61_preprocess_node__book(&$variables) {
+  $variables['custom_text'] = 'BOOK TYPE OF NODE';
 }
