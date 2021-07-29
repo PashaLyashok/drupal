@@ -18,3 +18,14 @@ function PlTopic6Task61_preprocess_html(&$variables) {
 function PlTopic6Task61_preprocess_node__book(&$variables) {
   $variables['custom_text'] = 'BOOK TYPE OF NODE';
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+
+function PlTopic6Task61_form_user_pass_reset_alter(&$form, &$form_state, $form_id) {
+  $build_info = $form_state->getBuildInfo();
+  $user = $build_info['args'][0];
+  $user_name = $user->name->getValue()[0]['value'];
+  $form['message']['#markup'] = '<p>Ну, что '. $user_name .' ? Снова забыл?';
+}
