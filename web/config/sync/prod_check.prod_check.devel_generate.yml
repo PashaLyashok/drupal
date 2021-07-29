@@ -1,0 +1,13 @@
+uuid: a9efd04e-c01b-4928-9a7a-dddc31fa1365
+langcode: en
+status: true
+dependencies:
+  module:
+    - devel_generate
+_core:
+  default_config_hash: BLAxM7oU-qO9PgYuAFRFbXTsquEHD0JuWIQu3rKMftY
+id: devel_generate
+label: 'Devel generate'
+plugin: devel_generate
+configuration:
+  severity: 1

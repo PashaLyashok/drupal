@@ -1,0 +1,11 @@
+uuid: 2bf92e5d-f3fd-466c-96ef-e40cffe16a6d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sJnswdA4g0PHqa-rT8WIi01tyvdQod9cPSxQ0dJCChs
+id: js_aggregated
+label: 'Aggregate and compress JS files.'
+plugin: js_aggregated
+configuration:
+  severity: 2

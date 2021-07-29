@@ -1,0 +1,13 @@
+uuid: d5aa9b86-7470-4011-bab4-ad4e3064eca6
+langcode: en
+status: true
+dependencies:
+  module:
+    - devel
+_core:
+  default_config_hash: VKnk6w523c7j3HHIM-fZUxcjsBtU3lFpdzC8oPrl3ao
+id: devel
+label: Devel
+plugin: devel
+configuration:
+  severity: 2

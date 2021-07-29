@@ -1,0 +1,10 @@
+uuid: 5006273c-b4d7-4674-9892-27e8326a8044
+langcode: en
+status: true
+dependencies:
+  module:
+    - update
+id: update
+label: 'Update status'
+plugin: update
+configuration: {  }

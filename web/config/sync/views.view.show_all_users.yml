@@ -2,6 +2,8 @@ uuid: da0eef53-ec1a-4724-8ea2-4054d06bc27b
 langcode: en
 status: true
 dependencies:
+  config:
+    - user.role.administrator
   module:
     - datetime
     - rest
@@ -22,8 +24,10 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -181,6 +185,7 @@ display:
         - request_format
         - url
         - url.query_args
+        - user.roles
       tags: {  }
   rest_export_1:
     display_plugin: rest_export
@@ -213,4 +218,5 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
+        - user.roles
       tags: {  }
