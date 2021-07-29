@@ -1,0 +1,8 @@
+uuid: 74c8bab2-82ed-45c2-a77b-55869add6357
+langcode: en
+status: true
+dependencies: {  }
+id: site_email
+label: 'Website email'
+plugin: site_email
+configuration: {  }

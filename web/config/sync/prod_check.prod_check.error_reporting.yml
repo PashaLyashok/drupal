@@ -1,0 +1,8 @@
+uuid: 66e85fb8-08c2-4e66-ab5e-832bd7acbe3f
+langcode: en
+status: true
+dependencies: {  }
+id: error_reporting
+label: 'Error reporting'
+plugin: error_reporting
+configuration: {  }

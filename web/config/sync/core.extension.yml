@@ -16,6 +16,7 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
+  devel_mail_logger: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -31,6 +32,7 @@ module:
   jquery_ui_droppable: 0
   layout_discovery: 0
   link: 0
+  mailsystem: 0
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
@@ -59,7 +61,6 @@ module:
   pl_topic13task83: 0
   pl_topic1task113: 0
   pl_topic1task118: 0
-  pl_topic1task122: 0
   pl_topic1task93: 0
   pl_topic1task94: 0
   pl_topic4task27: 0
@@ -71,20 +72,23 @@ module:
   pl_topic8task37: 0
   pl_topic8task38: 0
   pl_topic9task42: 0
+  prod_check: 0
+  prod_check_rest: 0
   quickedit: 0
   rdf: 0
   rest: 0
   restui: 0
   search: 0
+  security_review: 0
   serialization: 0
   shortcut: 0
+  site_audit: 0
   system: 0
   taxonomy: 0
   text: 0
   token: 0
   token_filter: 0
   toolbar: 0
-  topic13task83: 0
   tour: 0
   ultimate_cron: 0
   update: 0

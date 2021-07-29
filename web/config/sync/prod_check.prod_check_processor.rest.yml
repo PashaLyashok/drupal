@@ -1,0 +1,12 @@
+uuid: ab428724-3318-41a4-a063-ec441519fdf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - prod_check_rest
+_core:
+  default_config_hash: p0NQoQJMM39ZRBqaRA9MQmq1ELNfchmTD8EeOWI-q5A
+id: rest
+label: Rest
+plugin: rest
+configuration: {  }

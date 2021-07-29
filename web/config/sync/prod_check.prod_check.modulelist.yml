@@ -1,0 +1,8 @@
+uuid: 5ee334cd-aed8-4584-b20e-450dcafc116e
+langcode: en
+status: true
+dependencies: {  }
+id: modulelist
+label: 'Module List'
+plugin: modulelist
+configuration: {  }
