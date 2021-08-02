@@ -1,0 +1,28 @@
+uuid: ab784fbf-e4ab-42d7-ba20-812d5bab1384
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.zhanr
+  module:
+    - facets
+    - system
+  theme:
+    - PlTopic6Task61
+id: zhanr
+theme: PlTopic6Task61
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:zhanr'
+settings:
+  id: 'facet_block:zhanr'
+  label: Жанр
+  provider: facets
+  label_display: visible
+  block_id: zhanr
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false

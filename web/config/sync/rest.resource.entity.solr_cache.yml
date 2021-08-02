@@ -1,0 +1,18 @@
+uuid: 52ffc262-685b-4784-8643-e860169cf25c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - serialization
+    - user
+id: entity.solr_cache
+plugin_id: 'entity:solr_cache'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - xml
+  authentication:
+    - cookie

@@ -34,3 +34,5 @@ hidden:
   field_book_signing: true
   field_book_writing: true
   field_custom_paragraph: true
+  langcode: true
+  search_api_excerpt: true

@@ -25,6 +25,8 @@
         "drupal/ctools": "^3.7",
         "drupal/devel": "4.1",
         "drupal/devel_mail_logger": "^1.0@beta",
+        "drupal/facets": "^1.8",
+        "drupal/facets_reset_button": "^1.0",
         "drupal/features": "^3.12",
         "drupal/mailsystem": "^4.3",
         "drupal/migrate_plus": "^5.1",
@@ -37,6 +39,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/prod_check": "^1.0@alpha",
         "drupal/restui": "^1.20",
+        "drupal/search_api_solr": "^4.2",
         "drupal/security_review": "^1.0@alpha",
         "drupal/site_audit": "^3.0@RC",
         "drupal/taxonomy_import": "^2.0",
@@ -44,7 +47,8 @@
         "drupal/token_filter": "^1.2",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_field_view": "^1.0@beta",
-        "drush/drush": "^10.5"
+        "drush/drush": "^10.5",
+        "platformsh/config-reader": "^2.4"
     },
     "conflict": {
         "drupal/drupal": "*"
